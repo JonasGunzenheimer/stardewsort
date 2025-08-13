@@ -2,8 +2,11 @@ package edu.project.stardewsort;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 public class StardewSort implements ModInitializer {
 	public static final String MOD_ID = "stardewsort";
@@ -19,6 +22,12 @@ public class StardewSort implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("StardewSort Mod wurde erfolgreich geladen!");
+
+        // Neuer Event Listener für Kisten
+//        UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
+//            LOGGER.info("Spieler hat einen Block benutzt!");
+//            return ActionResult.PASS; // Weitermachen wie normal
+//        });
 	}
 }

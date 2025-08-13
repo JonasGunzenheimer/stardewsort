@@ -18,6 +18,9 @@
 		"main": [
 			"edu.project.stardewsort.StardewSort"
 		],
+      "client": [
+        "edu.project.stardewsort.StardewSortClient"
+      ],
 		"fabric-datagen": [
 			"edu.project.stardewsort.StardewSortDataGenerator"
 		]
